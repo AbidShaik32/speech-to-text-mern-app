@@ -1,0 +1,8 @@
+const { createClient } = require('@supabase/supabase-js');
+
+//Supabase Project Credentials
+const supabaseUrl = 'https://znepqvxvlesedkmholxa.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpuZXBxdnh2bGVzZWRrbWhvbHhhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MDEzMjQyNSwiZXhwIjoyMDc1NzA4NDI1fQ.u68cngwv9k-CCOggBlBbq4GLr2sMe6GrNvJpOyKdfcs'; 
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+module.exports = supabase;
